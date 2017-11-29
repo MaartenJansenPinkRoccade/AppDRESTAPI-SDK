@@ -1615,11 +1615,11 @@ public class MetricQuery {
     
     /* JVM Threads */
     public String queryJVMTierThreadsCurrentNoOfThreads(String tier, long start, long end, boolean rollup){
-        return JVMMetricQuery.queryJVMNodeMemoryNonHeapCurrentUsageMB(baseURL, application, tier, null, start, end, rollup);
+        return JVMMetricQuery.queryJVMNodeCurrentNoOfThreads(baseURL, application, tier, null, start, end, rollup);
     }
     
     public String queryJVMNodeThreadsCurrentNoOfThreads(String tier, String node, long start, long end, boolean rollup){
-        return JVMMetricQuery.queryJVMNodeMemoryNonHeapCurrentUsageMB(baseURL, application, tier, node,start, end, rollup);
+        return JVMMetricQuery.queryJVMNodeCurrentNoOfThreads(baseURL, application, tier, node,start, end, rollup);
     }
     
     /*  Overall Application Performance */
